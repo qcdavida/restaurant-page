@@ -4,11 +4,12 @@ import { menuContent } from './menuModule';
 import { contactContent } from './contactModule';
 
 const contentDiv = document.getElementById('content');
-const pathFile = "./src/";
+const pathFile = "../src/";
 
 contentDiv.appendChild(header());
 contentDiv.appendChild(mainContent());
 setEventListeners();
+loadCSSFile("style");
 
 function setEventListeners() {
     const homeTab = document.getElementById('homeTab');
