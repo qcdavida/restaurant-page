@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    /*image taken from here: https://unsplash.com/photos/DdZqit1Ep6A */
+    background-image: url(./images/stew2.avif);
+    background-size: cover;
+}
+
+.header {
+    color: #FDE68A;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #334155;
+    font-family: 'Karla', sans-serif;
+}
+
+.logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-options ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.nav-options a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FDE68A;
+}
+
+.nav-options a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #CBD5E1;
+    border-bottom: 2px solid #FBBF24;
+}
+
+.form-container{
+    border-top: 2px solid #FBBF24;
+    border-bottom: 2px solid #FBBF24;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85vh;
+    font-family: 'Karla', sans-serif;
+}
+
+#contact-form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    font-size: 20px;
+}
+
+#contact-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contact-form form li + li {
+    margin-top: 1em;
+}
+
+#contact-form label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+#contact-form input, #contact-form textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #000;
+}
+
+#contact-form textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+.button {
+    padding-left: 90px;
+}
+
+.button {
+    margin-left: .5em;
+}

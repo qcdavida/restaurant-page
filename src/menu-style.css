@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    /*image taken from here: https://unsplash.com/photos/W3SEyZODn8U */
+    background-image: url(./images/stew4.avif);
+    background-size: cover;
+}
+
+.header {
+    color: #FDE68A;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #334155;
+    font-family: 'Karla', sans-serif;
+}
+
+.logo {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-options ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.nav-options a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FDE68A;
+}
+
+.nav-options a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: #CBD5E1;
+    border-bottom: 2px solid #FBBF24;
+}
+
+.main-content {
+    border-top: 2px solid #FBBF24;
+    border-bottom: 2px solid #FBBF24;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 85vh;
+    font-family: 'Ms Madi', cursive;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    background-color: #334155;
+    margin: 5px;
+    padding: 12px;
+}
+
+.menu {
+    border: 2px solid black;
+    height: 600px;
+    width: 900px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.card {
+    border: 2px solid #FBBF24;
+    background-color: #CBD5E1;
+    height: 250px;
+    width: 250px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    opacity: 70%;
+}
